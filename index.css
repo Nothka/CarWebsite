@@ -1,0 +1,850 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Muli', sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+   
+}
+
+a:hover {
+    color: rgb(138, 138, 138);
+}
+
+
+
+nav {
+    background-color: white;
+    padding: 20px;
+    width: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: width 10.6s linear;
+}
+
+nav.active {
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    transition: width 0.6s linear;
+}
+
+nav.active ul {
+    width: 100%;
+}
+
+nav ul li {
+    transform: rotateY(0deg);
+    opacity: 0;
+    transition: transform 0.6s linear;
+}
+
+nav.active ul li {
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+
+nav ul a {
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.icon {
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+
+.icon:focus {
+    outline: 0;
+}
+
+.icon .line {
+    background-color: #000000;
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    transition: transform 0.6s linear;
+}
+
+.icon .line2 {
+    top: auto;
+    bottom: 10px;
+}
+
+nav.active .icon .line1 {
+    transform: rotate(-765deg) translateY(5.5px);
+}
+
+nav.active .icon .line2 {
+    transform: rotate(765deg) translateY(-5.5px);
+}
+
+nav ul {
+    justify-content: center;
+}
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none; /* This prevents the video from blocking clicks on other elements */
+}
+
+
+
+.description{
+    margin: 5rem;
+    /* background-color: red; */
+    width: auto;
+    height: auto;
+}
+
+.description p{
+    letter-spacing: 2px;
+    font-size:xx-large;
+    color: white;
+    text-align: center;
+
+}
+
+.description_placement{
+    margin-top: 14rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.model_showcase{
+    background-color: white;
+}
+
+.model_text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem;
+}
+
+.model_text h1{
+    padding:3rem;
+}
+
+.container {
+    display: flex;
+    width: 99vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    -webkit-transition: all 700ms ease-in;
+  }
+  
+  .panel h3 {
+    padding-top: 20px;
+    font-size: 24px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+  }
+  
+  .panel.active {
+    flex: 5;
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      width: 100vw;
+    }
+  
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+      display: none;
+    }
+  }
+
+
+  .model_categories{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .model_categories_each{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .model_categories_each:hover{
+   
+    color: rgb(138, 138, 138)
+  }
+
+  .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 4px;
+    border-radius: 10px;
+
+  }
+
+
+
+  
+.footer_li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    background-color: white;
+   
+}
+
+footer ul{
+    border-top: 1px solid rgb(255, 255, 255);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+.footer_li a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.footer_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_li li{
+    
+    padding: 20px;
+}
+
+
+
+
+
+
+
+.audi-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 0 30px;
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+.audi-description h1{
+    display: flex;
+    justify-content: center;
+}
+
+.audi_padding{
+
+    padding: 100px;
+}
+
+
+.audi_title{
+    padding: 2rem;
+}
+
+.audi_description{
+    columns: 2;
+    column-gap: 2rem;
+    padding: 40px 0px;
+}
+
+.audi_description p {
+    margin:0;
+    text-align: left;
+
+}
+
+/* Hide all but the first description */
+.audi_description p.hidden {
+    display: none;
+}
+
+/* Style the progress bar */
+#progressBar {
+    height: 3px;
+    width: 0%;
+    background-color: #007bff; /* Change color as needed */
+    position: relative;
+    top: 10px;
+}
+
+
+.contacts{
+    padding: 30px;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.inactive{
+    opacity: 0;
+    background-color: #000000;
+    color: white;
+}
+
+
+
+
+
+figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0; 
+    
+}
+
+
+figcaption p{
+    color: white;
+    font-size: 24px;  
+}
+.active:hover figcaption {
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+    justify-content: center;
+}
+
+
+
+
+  h1, p{
+    text-align: center;
+  }
+  label{
+    display:block;
+    margin:1em 0 .2em;
+  }
+  /* single-line text, checkbox, and button */
+  input, select, textarea{
+    display:block;
+    width:100%;
+    padding:.3em;
+    font-size:20px;
+    background-color:#fbfbfb;
+    border:solid 1px #CCC;
+    resize:vertical;
+  }
+  textarea{
+    min-height:180px;
+  }
+  select{
+    color:indigo;
+  }
+  option{
+    color:blue;
+    background: lavenderBlush;
+  }
+  input[type=checkbox]{
+    display:inline;
+    width:auto;
+    color:red;
+  }
+  
+  input[type=submit]{
+    background:rgb(40, 35, 35);
+    margin:1em 0 0;
+    color:white;
+    border:none;
+    border-radius:8px;
+    transition:all .3s ease-out;
+  }
+  
+  input:focus,
+  input:hover,
+  select:focus,
+  select:hover,
+  textarea:focus,
+  textarea:hover{
+    background: lavenderBlush;
+  }
+  
+  /* hover and focus states */
+  input[type=submit]:hover,
+  input[type=submit]:focus{
+    background: lightgreen;
+    outline:none;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (min-width:600px) {
+    /*  make the form 2 columns */
+    form:after{
+      content:'';
+      display:block;
+      clear:both;
+    }
+    .column{
+      width:50%;
+      padding:1em;
+      float:left;
+    }
+  }
+  
+
+
+ /*xl  */
+
+@media screen and (min-width: 2241px) {
+
+    nav{
+        padding: 44px !important ;
+    }
+    nav ul{
+        font-size: 3em !important;
+    }
+   
+    .description_placement{
+        margin-top: 40rem !important;
+    }
+
+    .description p {
+        font-size: 3em !important;
+    }
+
+    .audi-description{
+        padding: 30px;
+    }
+
+    .audi_description{
+        padding: 40px 40px;
+    }
+
+    figcaption p{
+        color: white;
+        font-size: 22px;  
+    }
+   
+}
+
+@media screen and (min-width: 300px) and (max-width:639px){
+    
+    .container{
+        display: inline-block;
+    }
+    .arrow{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 300px) {
+
+    nav{
+        padding: 20px;
+    }
+
+    nav ul{
+        font-size: 0.6em;
+    }
+    
+    .description{
+
+        margin: 1rem;
+    }
+
+    .description_placement{
+        margin-top: 10rem;
+    }
+
+    .description p {
+        font-size: 0.7em;
+    }
+
+    .audi_padding{
+        padding: 0;
+    }
+
+    .audi-description{
+        padding: 0
+    }
+  
+
+    .model_categories{
+        font-size: 0.7em;
+    }
+
+    .model_text h1{
+
+        padding: 3rem;
+    }
+
+    .footer_li li{
+        padding: 7px;
+    }
+
+    .panel.active{
+        flex: 10;
+    }
+
+    .panel{
+        height:14vh;
+        flex: 2.5;
+        border-radius:16px;
+    }
+
+    .panel h3{
+        font-size: 10px;
+        padding-top: 8px;
+    }
+
+    .container{
+        width: 96vw;
+        flex-wrap: wrap;
+    }
+
+    .contact_description{
+
+        width: 220px;
+        margin:30px
+    }
+
+    .contact_border{
+        padding: 0;
+    }
+
+    .audi_description{
+        columns: 1;
+        column-gap: 2rem;
+        padding: 20px 40px;
+    }
+
+    figcaption{
+        height: 100%;
+        border-radius: 15px;
+    }
+
+    figcaption p{
+
+       font-size: 6px;
+
+    }
+
+    
+
+}
+
+@media screen and (min-width: 640px) {
+
+
+    nav{
+       
+    }
+    nav ul{
+        font-size: 0.9em;
+    }
+   
+    .description_placement{
+        margin-top: 14rem;
+    }
+
+    .description p {
+        font-size: 1.2em;
+    }
+
+    .model_text{
+        margin: 3rem;
+    }
+
+   
+
+    .model_text h1{
+        padding: 0;
+    }
+
+    .panel.active{
+        flex: 5;
+    }
+
+    .panel{
+        height:20vh;
+        flex: 1;
+    }
+
+
+    .contact_description{
+
+        width: 440px;
+    }
+
+    .audi_description{
+        columns: 2;
+        column-gap: 2rem;
+        padding: 40px 0px;
+    }
+
+    .audi-description{
+        padding: 20px;
+    }
+
+    figcaption p{
+        color: white;
+        font-size: 8px;  
+    }
+
+    figcaption{
+        height: 100%;
+        border-radius: 16px;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+
+    nav{
+       
+    }
+    nav ul{
+        font-size: 1.1em;
+    }
+
+    .description{
+        margin: 5rem;
+    }
+   
+    .description_placement{
+        margin-top: 14rem;
+    }
+
+    .description p {
+        font-size: 1.5em;
+    }
+
+    
+    .audi-description{
+        padding: 30px;
+    }
+
+    .audi-description p{
+       font-size: 24px;
+    }
+  
+    .panel{
+
+        height: 33vh;
+        flex: 0.8;
+    }
+    .panel h3{
+        font-size: 20px;
+    }
+
+    .panel.active{
+        flex: 5;
+    }
+
+    
+    .contact_description{
+
+        width: 500px;
+    }
+
+    .audi_description{
+        columns: 2;
+        column-gap: 2rem;
+        padding: 40px 0px;
+    }
+
+    figcaption p{
+        color: white;
+        font-size: 16px;  
+    }
+}
+
+
+
+@media screen and (min-width: 1424px) {
+
+
+    nav{
+       
+    }
+    nav ul{
+        font-size: 1.5em;
+    }
+   
+    .description_placement{
+        margin-top: 17rem;
+    }
+
+    .description p {
+        font-size: 1.6em;
+    }
+
+    .audi-description{
+        padding: 30px;
+    }
+
+    
+    .container {
+        display: flex;
+        width: 96vw;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .panel {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 57vh;
+        border-radius: 50px;
+        color: #fff;
+        cursor: pointer;
+        flex: 0.5;
+        margin: 10px;
+        position: relative;
+        -webkit-transition: all 700ms ease-in;
+      }
+      
+      .panel h3 {
+        padding-top: 20px;
+        font-size: 24px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+      }
+      
+      .panel.active {
+        flex: 5;
+      }
+    
+      .footer_li li{
+        padding: 17px;
+    }
+
+
+    .contact_description{
+
+        width: 800px !important;
+    }
+
+    .audi_description{
+        columns: 2;
+        column-gap: 2rem;
+        padding: 40px 0px;
+    }
+    figcaption p{
+        color: white;
+        font-size: 18px;  
+    }
+
+    figcaption{
+        height: 100%;
+        border-radius: 46px;
+    }
+}

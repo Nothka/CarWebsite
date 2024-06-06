@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Audi: Precision Craftsmanship in Every Drive</title>
+</head>
+<body>
+
+    <video autoplay loop muted>
+        <source src="audi_background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <nav class="active" id="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" onclick="scrollToModels()" >Models </a></li>
+            <li><a href="#" onclick="scrollToAbout()" >About</a></li>
+            <li><a href="#" onclick="scrollToContact()">Contact</a></li>
+        </ul>
+
+        <button class="icon" id="toggle">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+        </button>
+
+    </nav>
+    <div class="description_placement">
+
+        <div class="description">
+            <p>Chart your course into a world where innovation meets sophistication. Audi invites you to redefine your journey, transcending ordinary boundaries. Elevate your drive, as every Audi tells a story of precision, performance, and prestige.</p>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="model_showcase" >
+        
+        <div class="model_text">
+            <div class="audi_padding" id="about">
+                
+                <div class="audi-description" >
+                    <div class="audi_title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 192.756 192.756"><g fill-rule="evenodd" clip-rule="evenodd"><path fill="#fff" d="M0 0h192.756v192.756H0V0z"/><path d="M156.588 149.965v-23.332h-9.629v23.332h9.629zM105.611 140.277v-13.291h-9.333v10.16c0 2.953-.118 3.781-.295 4.549-.65 2.127-2.895 3.07-5.198 3.07-3.189 0-4.666-1.24-5.257-3.189-.177-.648-.236-1.357-.295-2.066-.059-.768 0-1.596 0-2.48v-10.043h-9.451v13.35c0 3.014 1.005 5.258 2.658 6.793 2.835 2.777 7.62 3.604 12.05 3.604 5.375 0 9.51-.768 12.463-3.662 1.537-1.478 2.658-3.427 2.658-6.795zM59.774 138.623a7.94 7.94 0 0 0-1.417-.117H47.725c-.532 0-1.123.059-1.418.117.177-.178.532-.531.886-1.004l4.784-7.916c.65-1.062.945-1.771 1.063-2.066.118.295.413 1.004 1.063 2.127l4.903 7.975c.237.353.591.706.768.884zm17.839 11.342l-21.265-31.896H44.417l3.13 3.721c.059.059.178.117.295.178-.118.059-.236.117-.295.176L29 149.965h10.75l2.895-4.785c.118-.236.177-.473.177-.59.118 0 .414.117.709.117h19.197c.295 0 .531-.059.649-.117a.8.8 0 0 0 .118.473l3.013 4.902h11.105zM144.361 137.975c0-2.6-1.064-5.613-4.371-9.807l-7.975-10.1H120.91l6.32 7.088c1.064 1.182 2.422 2.244 2.422 2.244-1.535-.887-3.484-1.24-5.02-1.24-3.662 0-7.385.768-10.691 2.6-3.545 1.947-5.908 5.197-5.908 9.51 0 3.307 1.477 5.848 3.367 7.797 4.254 4.252 11.99 4.666 14.826 4.666 4.193 0 10.75-.945 14.473-4.312 2.186-2.009 3.662-4.784 3.662-8.446zm-9.215.295c0 2.422-1.596 4.252-3.604 5.256-1.654.887-3.604 1.123-5.316 1.123s-3.721-.355-5.375-1.182c-2.008-1.004-3.545-2.953-3.545-5.08 0-2.539 1.949-4.549 4.254-5.553 1.418-.648 3.131-.885 4.488-.885 1.301 0 3.191.176 4.668.768 2.659 1.121 4.43 3.248 4.43 5.553zM153.529 42.023a30.584 30.584 0 0 0-19.051 6.619 30.58 30.58 0 0 0-19.051-6.619 30.587 30.587 0 0 0-19.05 6.619 30.574 30.574 0 0 0-19.05-6.619 30.587 30.587 0 0 0-19.05 6.619 30.585 30.585 0 0 0-19.05-6.619c-16.971 0-30.724 13.752-30.724 30.724 0 16.97 13.752 30.724 30.724 30.724a30.588 30.588 0 0 0 19.05-6.619 30.585 30.585 0 0 0 19.05 6.619 30.576 30.576 0 0 0 19.05-6.619 30.587 30.587 0 0 0 19.05 6.619 30.581 30.581 0 0 0 19.051-6.619 30.581 30.581 0 0 0 19.051 6.619c16.971 0 30.723-13.753 30.723-30.724S170.5 42.023 153.529 42.023zM53.25 91.833c-3.915 2.856-8.806 4.599-14.023 4.599-13.092 0-23.686-10.593-23.686-23.685 0-13.092 10.594-23.686 23.686-23.686 5.217 0 10.105 1.744 14.023 4.601a30.543 30.543 0 0 0-6.646 19.085 30.77 30.77 0 0 0 6.646 19.086zm5.028-5.013a23.543 23.543 0 0 1-4.635-14.073 23.503 23.503 0 0 1 4.635-14.073 23.512 23.512 0 0 1 4.635 14.073 23.548 23.548 0 0 1-4.635 14.073zm33.073 5.013a23.585 23.585 0 0 1-14.04 4.592 23.513 23.513 0 0 1-14.007-4.592 30.761 30.761 0 0 0 6.646-19.085 30.543 30.543 0 0 0-6.646-19.085 23.505 23.505 0 0 1 14.007-4.593c5.255 0 10.11 1.7 14.04 4.593a30.543 30.543 0 0 0-6.646 19.085 30.763 30.763 0 0 0 6.646 19.085zm5.026-5.013a23.543 23.543 0 0 1-4.635-14.073 23.51 23.51 0 0 1 4.635-14.073 23.506 23.506 0 0 1 4.636 14.073 23.542 23.542 0 0 1-4.636 14.073zm33.074 5.013c-3.93 2.894-8.785 4.592-14.039 4.592s-10.078-1.701-14.008-4.592a30.755 30.755 0 0 0 6.646-19.085 30.543 30.543 0 0 0-6.646-19.085c3.93-2.892 8.754-4.593 14.008-4.593s10.109 1.7 14.039 4.593a30.55 30.55 0 0 0-6.646 19.085 30.77 30.77 0 0 0 6.646 19.085zm5.028-5.013a23.543 23.543 0 0 1-4.635-14.073 23.497 23.497 0 0 1 4.635-14.073 23.512 23.512 0 0 1 4.635 14.073 23.554 23.554 0 0 1-4.635 14.073zm19.05 9.612c-5.219 0-10.109-1.743-14.023-4.599a30.767 30.767 0 0 0 6.646-19.085 30.55 30.55 0 0 0-6.646-19.085c3.918-2.856 8.805-4.601 14.023-4.601 13.09 0 23.686 10.594 23.686 23.686 0 13.09-10.596 23.684-23.686 23.684z"/></g></svg>
+                        <h1>Welcome to Audi</h1>
+                        <div id="progressBar"></div>
+                    </div>
+                  <div class="audi_description">
+                    <p id="descriptionText">Experience the pinnacle of automotive excellence with Audi, a brand synonymous with precision engineering, cutting-edge technology, and luxurious design. From sleek and powerful sports cars to versatile and sophisticated SUVs, Audi offers a diverse range of vehicles meticulously crafted to deliver unparalleled driving experiences. Immerse yourself in the world of Audi and discover the thrill of the open road, where innovation meets sophistication and every drive becomes a celebration of performance, style, and prestige.</p>
+                    <p id="descriptionText2" class="hidden">Embark on a journey with Audi, the epitome of automotive excellence renowned for its commitment to perfection. With a rich history of precision engineering and innovation, Audi stands as a symbol of driving perfection, delivering unparalleled experiences on the road. From sleek sports cars to luxurious SUVs, Audi offers a diverse lineup of vehicles meticulously crafted to cater to every driving preference. Immerse yourself in Audi's world and discover the thrill of the open road, where cutting-edge technology meets sophisticated design, and every drive becomes a celebration of performance and style.</p>
+                    <p id="descriptionText3" class="hidden">Discover the essence of automotive luxury with Audi, a brand revered for its dedication to excellence and innovation. With a legacy of precision engineering and meticulous craftsmanship, Audi vehicles are renowned for their unparalleled performance and refined elegance. From iconic sports cars to versatile SUVs, Audi offers a diverse range of vehicles tailored to suit every driving preference. Immerse yourself in the world of Audi and experience the thrill of the open road, where innovation meets sophistication, and every journey becomes a celebration of performance, style, and prestige.</p>
+                   
+                </div>
+                </div>
+            </div>
+
+
+            <!-- This was a project where I wasn't allowed to create an object for the car and change the details so I had to wirte the same code again and again... -->
+
+            
+            <h1 id="models">Models</h1>
+
+            <div class="container" id="panelContainer">
+                
+                <button class="arrow arrow-left" onclick="prevPanel()">←</button>
+                <div class="panel first" style="background-image: url(https://cf-cdn-v6-api.audi.at/files/ca8a4c6327f1efe3c57cf7c01801c7582b9136f6/726c5dda-e278-4384-aeb3-79caea970ec8/aa11810013-l)">
+                    <figure>
+                        <h3>A1</h3>
+                        <figcaption>
+                            <p><strong>Horsepower</strong> 110-200 HP</p>
+                            <p><strong>Engine:</strong>Turbocharged inline-four</p>
+                            <p><strong>Year of fabrication:</strong> 2022</p>
+                            <p><strong>Starting price:</strong> $25,000</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="panel" style="background-image: url('https://www.autocritica.ro/wp-content/uploads/2021/02/audi-a3-sedan-top-2400x1600.jpg')">
+                    <figure>
+                        <h3>A3</h3>
+                        <figcaption>
+                            <p><strong>Horsepower</strong> 150-300 HP</p>
+                            <p><strong>Engine:</strong>Turbocharged inline-four</p>
+                            <p><strong>Year of fabrication:</strong> 2023</p>
+                            <p><strong>Starting price:</strong> $33,000</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="panel" style="background-image: url('https://www.topgear.com/sites/default/files/cars-car/image/2021/03/audiuk0002285520audi20a420avant.jpg')">
+                    <figure>
+                        <h3>A4</h3>
+                        <figcaption>
+                            <p><strong>Horsepower</strong> 188-349 HP</p>
+                            <p><strong>Engine:</strong>Turbocharged inline-four / V6</p>
+                            <p><strong>Year of fabrication:</strong> 2024</p>
+                            <p><strong>Starting price:</strong> $40,000</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="panel" style="background-image: url('https://static.automarket.ro/img/auto_resized/db/article/096/747/536036l-900x0-w-a1096865.jpg')">
+                    <figure>
+                        <h3>A5</h3>
+                        <figcaption>
+                            <p><strong>Horsepower</strong> 201-444 HP</p>
+                            <p><strong>Engine:</strong>Turbocharged inline-four / V6</p>
+                            <p><strong>Year of fabrication:</strong> 2024</p>
+                            <p><strong>Starting price:</strong> $45,000</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="panel last" style="background-image: url('https://hips.hearstapps.com/hmg-prod/images/2020-audi-a6-mmp-1-1567713400.jpg')">
+                    <figure>
+                        <h3>A6</h3>
+                        <figcaption>
+                            <p><strong>Horsepower</strong> 248-591 HP</p>
+                            <p><strong>Engine:</strong>Turbocharged inline-four / V6 / V8</p>
+                            <p><strong>Year of fabrication:</strong> 2023</p>
+                            <p><strong>Starting price:</strong> $55,000</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="panel first2" style="background-image: url(https://www.promotor.ro/wp-content/uploads/2020/09/Noul-Audi-Q2-facelift-17.jpg)">
+                    <figcaption>
+                        <h3>Q2</h3>
+                        <p><strong>Horsepower:</strong> 116-197 HP</p>
+                        <p><strong>Engine:</strong> Turbocharged inline-four</p>
+                        <p><strong>Year of fabrication:</strong> 2022</p>
+                        <p><strong>Starting price:</strong> $30,000</p>
+                    </figcaption>
+                </div>
+                <div class="panel" style="background-image: url('https://hips.hearstapps.com/hmg-prod/images/2022-audi-q3-premium-45-119-64b19da0646ad.jpg?crop=0.627xw:0.470xh;0.175xw,0.369xh&resize=1200:*')">
+                    <figcaption>
+                        <h3>Q3</h3>
+                        <p><strong>Horsepower:</strong> 184-400 HP</p>
+                        <p><strong>Engine:</strong> Turbocharged inline-four / V6</p>
+                        <p><strong>Year of fabrication:</strong> 2023</p>
+                        <p><strong>Starting price:</strong> $35,000</p>
+                    </figcaption>
+                </div>
+                <div class="panel" style="background-image: url(https://static.automarket.ro/img/auto_resized/db/article/115/265/519491l-1000x640-b-74c2ac14.jpg)">
+                    <figcaption>
+                        <h3>Q4</h3>
+                        <p><strong>Horsepower:</strong> 201-349 HP</p>
+                        <p><strong>Engine:</strong> Turbocharged inline-four / V6</p>
+                        <p><strong>Year of fabrication:</strong> 2024</p>
+                        <p><strong>Starting price:</strong> $40,000</p>
+                    </figcaption>
+                </div>
+                <div class="panel" style="background-image: url('https://hips.hearstapps.com/hmg-prod/images/2024-audi-q5-prestige-103-64b04c303ecdb.jpg?crop=0.751xw:0.844xh;0.130xw,0.156xh&resize=768:*')">
+                    <figcaption>
+                        <h3>Q5</h3>
+                        <p><strong>Horsepower:</strong> 261-362 HP</p>
+                        <p><strong>Engine:</strong> Turbocharged inline-four / V6</p>
+                        <p><strong>Year of fabrication:</strong> 2023</p>
+                        <p><strong>Starting price:</strong> $45,000</p>
+                    </figcaption>
+                </div>
+                <div class="panel last2" style="background-image: url(https://media.autoexpress.co.uk/image/private/s--X-WVjvBW--/f_auto,t_content-image-full-desktop@1/v1670507364/autoexpress/2022/12/RR%20Sport%20vs%20Audi%20Q7-5.jpg)">
+                    <figcaption>
+                        <h3>Q7</h3>
+                        <p><strong>Horsepower:</strong> 248-500 HP</p>
+                        <p><strong>Engine:</strong> Turbocharged inline-four / V6 / V8</p>
+                        <p><strong>Year of fabrication:</strong> 2024</p>
+                        <p><strong>Starting price:</strong> $55,000</p>
+                    </figcaption>
+                </div>
+                <div class="panel last13 first3" style="background-image: url(https://uploads.audi-mediacenter.com/system/production/media/71164/images/a41672e1a01de586f023e4491da3f88548b52984/A1814539_web_2880.jpg?1698345785)">
+                    <figcaption>
+                        <h3>E-Tron</h3>
+                        <p><strong>Horsepower:</strong> 355-637 HP</p>
+                        <p><strong>Engine:</strong> Electric motors</p>
+                        <p><strong>Year of fabrication:</strong> 2023</p>
+                        <p><strong>Starting price:</strong> $65,000</p>
+                    </figcaption>
+                </div>
+                <div class="panel last3 " style="background-image: url(https://hips.hearstapps.com/hmg-prod/images/2024-audi-rs-e-tron-gt-102-649dc205e835e.jpg?crop=0.852xw:0.780xh;0.0738xw,0.198xh&resize=980:*)">
+                    <figcaption>
+                        <h3>E-Tron GT</h3>
+                        <p><strong>Horsepower:</strong> 469-637 HP</p>
+                        <p><strong>Engine:</strong> Electric motors</p>
+                        <p><strong>Year of fabrication:</strong> 2024</p>
+                        <p><strong>Starting price:</strong> $75,000</p>
+                    </figcaption>
+                </div>
+               
+               
+                
+                <button class="arrow arrow-right" onclick="nextPanel()">→</button>
+              </div>
+
+        </div>
+
+        <div class="model_category">
+
+            <div class="model_categories">
+                <div class="model_categories_each">
+                    <h2 id="aCategory">A-Models</h2>
+                </div >
+                <div class="model_categories_each">
+                    <h2 id="qCategory">Q-Models</h2>
+                </div>
+                <div class="model_categories_each">
+                    <h2 id="EtronCategory">E-Tron</h2>
+                </div>
+               
+
+            </div>
+        
+        </div>
+
+    </div>
+
+
+
+    <div class="contacts" id="contact">
+
+  
+        <form action="#" method="post" id="contact-form">
+            <h1>Contact Us</h1>
+            <p>Please take a moment to get in touch, we will get back to you shortly.</p>
+        
+            <div class="column">
+                <label for="the-name">Your Name</label>
+                <input type="text" name="name" id="the-name">
+        
+                <label for="the-email">Email Address</label>
+                <input type="email" name="email" id="the-email">
+        
+                <label for="the-phone">Phone Number</label>
+                <input type="tel" name="phone" id="the-phone">
+        
+                <label for="the-reason">How can we help you?</label>
+                <select name="reason" id="the-reason">
+                    <option value="">Choose one</option>
+                    <option value="web">I want to buy a car</option>
+                    <option value="video">I need help with a car I already purchased</option>
+                    <option value="3d">I have a question</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="column">
+                <label for="the-message">Message</label>
+                <textarea name="message" id="the-message"></textarea>
+                <label>
+                    <input type="checkbox" name="newsletter" value="yes"> Join our mailing list?
+                </label>
+                <input type="submit" value="Send Message">
+            </div>
+            <p id="sentMessage" style="display: none;">Message Sent!</p>
+        </form>
+     
+
+  
+    </div>
+
+
+
+    <footer>
+        <div class="footer_li">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a onclick="scrollToModels()" >Models </a></li>
+                <li><a onclick="scrollToAbout()" >About</a></li>
+                <li><a onclick="scrollToContact()">Contact</a></li>
+            </ul>
+
+            <div class="footer_name">
+                <p>&copy; 2024 Audi Precision</p>
+            </div>
+        </div>
+    </footer>
+
+   
+
+    <script src="index.js"></script>
+</body>
+</html>
